@@ -29,7 +29,7 @@ void ejemplo_lee(string filenamex, string filenamey){
   while(infile){
     cout << line << endl;
     getline(infile, line);
-   
+  }
    
   cout << "Leyendo de " << filenamey << endl; 
   getline(infile, line);
