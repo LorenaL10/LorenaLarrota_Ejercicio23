@@ -13,25 +13,35 @@ int main () {
   string filenamey;
   filenamey= "valores_y.txt";
   ejemplo_lee(filenamey);
+ 
+ return 0;
   
 }
 
 
-void ejemplo_lee(string filenamex, string filenamey){
+void ejemplo_leex(string filenamex){
   ifstream infile; 
   string line;
 
   infile.open(filenamex); 
-   infile.open(filenamey);
- 
-  cout << "Leyendo de " << filenamex << endl; 
+  
+  cout << "Leyendo de " << filename << endl; 
   getline(infile, line);
   while(infile){
     cout << line << endl;
     getline(infile, line);
   }
+
+  infile.close();
+}
    
-  cout << "Leyendo de " << filenamey << endl; 
+ void ejemplo_leey(string filenamey){
+  ifstream infile; 
+  string line;
+
+  infile.open(filenamey); 
+  
+  cout << "Leyendo de " << filename << endl; 
   getline(infile, line);
   while(infile){
     cout << line << endl;
