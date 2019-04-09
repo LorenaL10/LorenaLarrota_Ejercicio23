@@ -8,11 +8,11 @@ void ejemplo_lee(string filename);
 int main () {
   string filenamex;
   filenamex = "valores_x.txt";
-  ejemplo_lee(filenamex);
+  ejemplo_leex(filenamex);
   
   string filenamey;
   filenamey= "valores_y.txt";
-  ejemplo_lee(filenamey);
+  ejemplo_leey(filenamey);
  
  return 0;
   
