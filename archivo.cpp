@@ -31,10 +31,9 @@ void ejemplo_leex(string filenamex){
     cout << line << endl;
     double lineas=getline(infile, line);
     double datos_x[20];
-   for(i=0; i<21; i++){
-    datos[i]=lineas;
+   for(int i=0; i<21; i++){
+    datos_x[i]=lineas;
   }
-
   infile.close();
 }
    
