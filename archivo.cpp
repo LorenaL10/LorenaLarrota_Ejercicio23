@@ -2,8 +2,8 @@
 #include <iostream>
 using namespace std;
  
-void ejemplo_lee(string filename);
-
+void ejemplo_leex(string filenamex);
+void ejemplo_leey(string filenamey);
 
 int main () {
   string filenamex;
