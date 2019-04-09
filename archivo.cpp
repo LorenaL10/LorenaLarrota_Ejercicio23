@@ -23,15 +23,15 @@ float ejemplo_leex(string filenamex){
   ifstream infile; 
   string line;
   int i=0;
+  double datos_x[20];
 
   infile.open(filenamex); 
   
   cout << "Leyendo de " << filenamex << endl; 
   getline(infile, line);
   while(infile){
-    double datos_x[20];
     datos_x[i]=atof(line.c_str());
-    i++
+    i++;
     getline(infile, line);
   }
   infile.close();
