@@ -25,7 +25,7 @@ void ejemplo_leex(string filenamex){
 
   infile.open(filenamex); 
   
-  cout << "Leyendo de " << filename << endl; 
+  cout << "Leyendo de " << filenamex << endl; 
   getline(infile, line);
   while(infile){
     cout << line << endl;
@@ -41,7 +41,7 @@ void ejemplo_leex(string filenamex){
 
   infile.open(filenamey); 
   
-  cout << "Leyendo de " << filename << endl; 
+  cout << "Leyendo de " << filenamey << endl; 
   getline(infile, line);
   while(infile){
     cout << line << endl;
