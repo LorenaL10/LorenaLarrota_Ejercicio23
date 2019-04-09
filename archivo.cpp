@@ -28,10 +28,9 @@ void ejemplo_leex(string filenamex){
   cout << "Leyendo de " << filenamex << endl; 
   getline(infile, line);
   while(infile){
-    getline(infile, line);
     double datos_x[20];
-    for(int i=0; i<21; i++){
     datos_x[i]=atof(line.c_str());
+    i++
     getline(infile, line);
   }
   infile.close();
