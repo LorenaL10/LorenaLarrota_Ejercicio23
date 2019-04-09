@@ -7,7 +7,7 @@ void ejemplo_lee(string filename);
 
 int main () {
   string filename;
-  filename = "valores_x.txt";
+  filename = "valores_x.txt",  "valores_y.txt";
   ejemplo_lee(filename);
   
   string filename;
