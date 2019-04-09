@@ -6,24 +6,32 @@ void ejemplo_lee(string filename);
 
 
 int main () {
-  string filename;
-  filename = "valores_x.txt",  "valores_y.txt";
-  ejemplo_lee(filename);
+  string filenamex;
+  filenamex = "valores_x.txt";
+  ejemplo_lee(filenamex);
   
-  string filename;
-  filename = "valores_y.txt";
-  ejemplo_lee(filename);
+  string filenamey;
+  filenamey= "valores_y.txt";
+  ejemplo_lee(filenamey);
   
 }
 
 
-void ejemplo_lee(string filename){
+void ejemplo_lee(string filenamex, string filenamey){
   ifstream infile; 
   string line;
 
-  infile.open(filename); 
-  
-  cout << "Leyendo de " << filename << endl; 
+  infile.open(filenamex); 
+   infile.open(filenamey);
+ 
+  cout << "Leyendo de " << filenamex << endl; 
+  getline(infile, line);
+  while(infile){
+    cout << line << endl;
+    getline(infile, line);
+   
+   
+  cout << "Leyendo de " << filenamey << endl; 
   getline(infile, line);
   while(infile){
     cout << line << endl;
