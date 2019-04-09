@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
  
-float ejemplo_leex(string filenamex);
+double ejemplo_leex(string filenamex);
 void ejemplo_leey(string filenamey);
 
 int main () {
@@ -19,7 +19,7 @@ int main () {
 }
 
 
-float ejemplo_leex(string filenamex){
+double ejemplo_leex(string filenamex){
   ifstream infile; 
   string line;
   int i=0;
