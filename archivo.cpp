@@ -19,7 +19,7 @@ int main () {
 }
 
 
-void ejemplo_leex(string filenamex){
+float ejemplo_leex(string filenamex){
   ifstream infile; 
   string line;
 
