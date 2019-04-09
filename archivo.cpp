@@ -28,13 +28,14 @@ void ejemplo_leex(string filenamex){
   cout << "Leyendo de " << filenamex << endl; 
   getline(infile, line);
   while(infile){
-    cout << line << endl;
-    string lineas=getline(infile, line);
+    getline(infile, line);
     double datos_x[20];
-   for(int i=0; i<21; i++){
-    datos_x[i]=atoi(lineas);
+    for(int i=0; i<21; i++){
+    datos_x[i]=atof(line.c_str());
+    getline(infile, line);
   }
   infile.close();
+   return datos_x;
 }
    
  void ejemplo_leey(string filenamey){
